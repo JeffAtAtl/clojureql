@@ -1,6 +1,6 @@
-(defproject clojureql "1.0.4"
+(defproject clojureql "1.0.5-SNAPSHOT"
   :description      "Superior SQL integration for Clojure"
-  :dependencies     [[org.clojure/clojure         "1.4.0"]
+  :dependencies     [[org.clojure/clojure         "1.7.0"]
                      [org.clojure/core.incubator  "0.1.1"]
                      [org.clojure/java.jdbc       "0.2.3"]]
   :dev-dependencies [[mysql/mysql-connector-java  "5.1.17"]
