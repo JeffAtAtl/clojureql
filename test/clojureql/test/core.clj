@@ -294,7 +294,7 @@
          (-> (table :users)
              (join (table :wages) :wid)
              (join (table :commits) :cid))
-         "SELECT users.*,wages.*,commits.* FROM users JOIN wages USING(wid) JOIN commits USING(cid)"
+         "SELECT users.*,wages.*,commits.* FROM users JOIN commits USING(cid) JOIN wages USING(wid)"
          select-countries-with-region-and-spot-count
          (str "SELECT countries.*,regions_subselect.country_id,spots_subselect.country_id,regions_subselect.regions,spots_subselect.spots FROM countries "
               "LEFT OUTER JOIN (SELECT regions.country_id,count(regions.id) AS regions FROM regions GROUP BY regions.country_id) AS regions_subselect "
