@@ -5,3 +5,7 @@ pom.xml
 lib
 classes
 build
+target
+*.log
+.lein-failures
+test/clojureql/test/.core.clj.swp
